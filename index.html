@@ -13,20 +13,20 @@
         }
 
         body {
-            font-family: 'Montserrat', sans-serif; /* Uma fonte moderna e legível */
-            background-color: #1e1e2f; /* Um azul escuro/roxo, lembrando espaço ou noite */
-            color: #e0e0e0; /* Texto claro para contraste */
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FFF7F9; /* Rosa bem clarinho / quase branco */
+            color: #5D5D5D; /* Cinza escuro suave para texto principal */
             line-height: 1.6;
         }
 
-        /* --- Tipografia Geek --- */
+        /* --- Tipografia Geek (Mantida para títulos) e Cores Suaves --- */
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@400;700&display=swap');
 
         h1, h2, h3 {
-            font-family: 'Press Start 2P', cursive; /* Fonte pixelada para títulos */
-            color: #76ff03; /* Verde neon, típico de interfaces retro/hacker */
+            font-family: 'Press Start 2P', cursive;
+            color: #E57373; /* Rosa mais forte e legível */
             margin-bottom: 20px;
-            text-shadow: 2px 2px #212121;
+            text-shadow: 1px 1px #FFEBEE; /* Sombra rosa bem clara */
         }
 
         /* --- Container Principal --- */
@@ -39,16 +39,17 @@
 
         /* --- Cabeçalho --- */
         header {
-            background-color: #2c2c44; /* Um tom mais claro que o body */
+            background-color: #FFEBEE; /* Rosa pastel bem claro */
             padding: 20px 0;
-            border-bottom: 3px solid #76ff03; /* Detalhe na cor de destaque */
+            border-bottom: 3px solid #FFC1CC; /* Rosa um pouco mais visível */
             text-align: center;
             margin-bottom: 30px;
         }
 
         header .logo {
-            font-size: 2.2em; /* Ajuste leve para nome um pouco maior */
-            letter-spacing: 1px; /* Ajuste leve para nome um pouco maior */
+            font-size: 2.2em;
+            letter-spacing: 1px;
+            color: #D81B60; /* Um rosa mais escuro e vibrante para o logo */
         }
 
         nav ul {
@@ -63,7 +64,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #f0f0f0;
+            color: #7B6D6D; /* Cinza mais escuro para links da navegação */
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
             padding: 5px 10px;
@@ -72,52 +73,54 @@
         }
 
         nav ul li a:hover, nav ul li a.active {
-            background-color: #76ff03;
-            color: #1e1e2f;
+            background-color: #E57373; /* Rosa forte */
+            color: #FFF7F9; /* Texto claro do botão */
         }
 
         /* --- Seção Hero --- */
         .hero {
-            background: url('https://via.placeholder.com/1200x400/3a3a5a/76ff03?text=Banner+Ias+Amigurumis!') no-repeat center center/cover; /* Placeholder para um banner temático */
-            color: #fff;
+            /* Atualize o placeholder para um banner com cores femininas e tema da loja */
+            background: url('https://via.placeholder.com/1200x400/FFEBEE/E57373?text=Ias+Amigurumis+Banner+Fofo!') no-repeat center center/cover;
+            color: #4E4E4E; /* Texto escuro para contraste com fundo potencialmente claro do banner */
             padding: 60px 20px;
             text-align: center;
             border-radius: 8px;
             margin-bottom: 40px;
-            box-shadow: 0 0 15px rgba(118, 255, 3, 0.5);
+            box-shadow: 0 0 15px rgba(229, 115, 115, 0.2); /* Sombra rosa suave */
         }
 
         .hero h2 {
             font-size: 2.8em;
             margin-bottom: 15px;
-            color: #fff; /* Títulos do hero em branco para melhor contraste com a imagem */
-            text-shadow: 2px 2px #000;
+            color: #D81B60; /* Rosa escuro vibrante para o título do hero */
+            text-shadow: 1px 1px #FFF9F9;
         }
 
         .hero p {
             font-size: 1.2em;
             margin-bottom: 25px;
             font-family: 'Montserrat', sans-serif;
+            color: #5D5D5D;
         }
 
         .btn {
             display: inline-block;
-            background-color: #76ff03;
-            color: #1e1e2f;
+            background-color: #E57373; /* Rosa forte */
+            color: #FFF7F9; /* Texto claro do botão */
             padding: 12px 25px;
             text-decoration: none;
             font-family: 'Press Start 2P', cursive;
             font-size: 0.9em;
             border-radius: 5px;
-            border: 2px solid #76ff03;
+            border: 2px solid #E57373;
             transition: background-color 0.3s, color 0.3s, transform 0.2s;
-            box-shadow: 3px 3px #212121;
+            box-shadow: 3px 3px #D45050; /* Sombra rosa um pouco mais escura */
         }
 
         .btn:hover {
-            background-color: #5cb802;
+            background-color: #D45050; /* Rosa um pouco mais escuro no hover */
             transform: translateY(-2px);
-            box-shadow: 5px 5px #212121;
+            box-shadow: 5px 5px #B24040;
         }
 
         /* --- Seção de Produtos --- */
@@ -127,13 +130,13 @@
 
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsivo */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
 
         .product-card {
-            background-color: #2c2c44;
-            border: 2px solid #4a4a6a;
+            background-color: #FFFFFF; /* Cards brancos para leveza */
+            border: 2px solid #FFC1CC; /* Borda rosa clara */
             border-radius: 8px;
             padding: 20px;
             text-align: center;
@@ -142,104 +145,101 @@
 
         .product-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(118, 255, 3, 0.3);
-            border-color: #76ff03;
+            box-shadow: 0 10px 20px rgba(229, 115, 115, 0.15); /* Sombra rosa suave */
+            border-color: #E57373; /* Borda rosa forte no hover */
         }
 
         .product-card img {
             width: 100%;
-            max-width: 250px; /* Tamanho máximo da imagem do produto */
+            max-width: 250px;
             height: auto;
             border-radius: 6px;
             margin-bottom: 15px;
-            border: 3px solid #76ff03; /* Borda na imagem para destacar */
+            border: 3px solid #E57373; /* Borda rosa forte na imagem */
         }
 
         .product-card h3 {
-            font-size: 1.3em; /* Tamanho um pouco menor para cards */
-            color: #76ff03;
+            font-size: 1.3em;
+            color: #E57373; /* Título do card em rosa forte */
             margin-bottom: 10px;
         }
 
         .product-card .price {
             font-size: 1.4em;
             font-weight: bold;
-            color: #fff;
+            color: #D81B60; /* Preço em rosa escuro vibrante */
             margin-bottom: 15px;
             font-family: 'Montserrat', sans-serif;
         }
-
-        .product-card .price .original-price {
+         .product-card .price .original-price {
             text-decoration: line-through;
             color: #aaa;
             font-size: 0.8em;
             margin-left: 8px;
         }
 
-
-        .product-card p {
+        .product-card p { /* Descrição do produto no card */
             font-size: 0.9em;
             margin-bottom: 15px;
             font-family: 'Montserrat', sans-serif;
-            color: #c0c0c0;
+            color: #6D6D6D; /* Cinza suave para descrição */
         }
 
         /* --- Seção Sobre / Destaque --- */
         .about-section {
-            background-color: #2c2c44;
+            background-color: #FFEBEE; /* Fundo rosa pastel */
             padding: 40px 20px;
             margin: 40px 0;
             border-radius: 8px;
             text-align: center;
-            border-top: 3px solid #76ff03;
-            border-bottom: 3px solid #76ff03;
+            border-top: 3px solid #FFC1CC;
+            border-bottom: 3px solid #FFC1CC;
         }
         .about-section h2 {
-             color: #76ff03;
+             color: #D81B60; /* Título da seção em rosa escuro vibrante */
         }
         .about-section p {
             font-family: 'Montserrat', sans-serif;
             max-width: 700px;
             margin: 0 auto 20px auto;
-            color: #e0e0e0;
+            color: #5D5D5D;
         }
 
-        /* --- Seção Depoimentos (Opcional) --- */
+        /* --- Seção Depoimentos --- */
         .testimonials-section {
             padding: 30px 0;
             text-align: center;
         }
         .testimonial-card {
-            background-color: #2c2c44;
-            border: 1px solid #4a4a6a;
-            border-left: 5px solid #76ff03;
+            background-color: #FFFFFF; /* Card de depoimento branco */
+            border: 1px solid #FFEBEE; /* Borda rosa bem clarinha */
+            border-left: 5px solid #E57373; /* Destaque lateral rosa forte */
             padding: 20px;
             margin: 0 auto 20px auto;
             max-width: 600px;
             border-radius: 0 8px 8px 0;
         }
-        .testimonial-card p {
+        .testimonial-card p { /* Texto do depoimento */
              font-family: 'Montserrat', sans-serif;
              font-style: italic;
-             color: #d0d0d0;
+             color: #5D5D5D;
              margin-bottom: 10px;
         }
         .testimonial-card .author {
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
-            color: #76ff03;
+            color: #E57373; /* Autor em rosa forte */
             text-align: right;
         }
 
-
         /* --- Rodapé --- */
         footer {
-            background-color: #161621; /* Mais escuro que o header */
-            color: #aaa;
+            background-color: #FFEBEE; /* Rodapé rosa pastel */
+            color: #7B6D6D; /* Texto do rodapé em cinza */
             text-align: center;
             padding: 30px 0;
             margin-top: 40px;
-            border-top: 3px solid #76ff03;
+            border-top: 3px solid #FFC1CC;
         }
 
         footer p {
@@ -248,21 +248,21 @@
         }
 
         .social-icons a {
-            color: #76ff03;
+            color: #E57373; /* Ícones sociais em rosa forte */
             margin: 0 10px;
-            font-size: 1.5em; /* Tamanho dos ícones sociais */
+            font-size: 1.5em;
             text-decoration: none;
             transition: color 0.3s;
         }
 
         .social-icons a:hover {
-            color: #fff;
+            color: #D81B60; /* Rosa escuro vibrante no hover */
         }
 
         /* --- Responsividade Básica --- */
         @media (max-width: 768px) {
             header .logo {
-                font-size: 1.6em; /* Ajuste para nome maior em telas pequenas */
+                font-size: 1.8em;
             }
             nav ul li {
                 display: block;
@@ -275,7 +275,7 @@
                 font-size: 1em;
             }
             .products-grid {
-                grid-template-columns: 1fr; /* Uma coluna em telas menores */
+                grid-template-columns: 1fr;
             }
         }
 
@@ -301,17 +301,17 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h2>Heróis e Vilões em Crochê!</h2>
-                <p>Leve para casa seus personagens favoritos do universo geek, feitos à mão com carinho de fã para fã.</p>
-                <a href="#" class="btn">Ver Coleção Completa</a>
+                <h2>Fofuras em Crochê Para Alegrar Seu Mundo Geek!</h2>
+                <p>Personagens amados, feitos à mão com carinho e um toque de magia artesanal.</p>
+                <a href="#" class="btn">Ver Coleção Encantada</a>
             </div>
         </section>
 
         <section class="products-section container">
-            <h2>Nossos Destaques</h2>
+            <h2>Nossos Tesouros Artesanais</h2>
             <div class="products-grid">
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/250/4a4a6a/76ff03?text=Baby+Yoda+Amigurumi" alt="Amigurumi Baby Yoda">
+                    <img src="https://via.placeholder.com/250/FFEBEE/E57373?text=Yoda+Fofinho" alt="Amigurumi Baby Yoda">
                     <h3>Baby Yoda Estelar</h3>
                     <p class="price">R$ 89,90</p>
                     <p>A criatura mais fofa da galáxia, agora em versão amigurumi. Perfeito para sua estante!</p>
@@ -319,7 +319,7 @@
                 </div>
 
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/250/4a4a6a/76ff03?text=Pikachu+Amigurumi" alt="Amigurumi Pikachu">
+                    <img src="https://via.placeholder.com/250/FFEBEE/E57373?text=Pikachu+Amigo" alt="Amigurumi Pikachu">
                     <h3>Pikachu Choque do Trovão</h3>
                     <p class="price">R$ 79,90</p>
                     <p>Capture este Pikachu de crochê antes que ele use o Agility e fuja! Ideal para mestres Pokémon.</p>
@@ -327,14 +327,14 @@
                 </div>
 
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/250/4a4a6a/76ff03?text=Mago+Amigurumi" alt="Amigurumi Mago">
+                    <img src="https://via.placeholder.com/250/FFEBEE/E57373?text=Mago+Gentil" alt="Amigurumi Mago">
                     <h3>Mago da Torre Arcana</h3>
                     <p class="price">R$ 99,90 <span class="original-price">R$110,00</span></p>
                     <p>Confeccionado com fios encantados, este mago trará sabedoria (e fofura) para seu ambiente.</p>
                     <a href="#" class="btn">Comprar Agora</a>
                 </div>
                  <div class="product-card">
-                    <img src="https://via.placeholder.com/250/4a4a6a/76ff03?text=Link+Amigurumi" alt="Amigurumi Herói de Hyrule">
+                    <img src="https://via.placeholder.com/250/FFEBEE/E57373?text=Herói+Valente" alt="Amigurumi Herói de Hyrule">
                     <h3>Herói de Hyrule</h3>
                     <p class="price">R$ 95,50</p>
                     <p>It's dangerous to go alone! Leve este pequeno herói para suas aventuras diárias.</p>
@@ -345,21 +345,21 @@
 
         <section class="about-section">
             <div class="container">
-                <h2>Feitos com Magia e Fios</h2>
+                <h2>Feitos com Fios de Sonho e Carinho</h2>
                 <p>Na <strong>Ias Amigurumis</strong>, cada amigurumi é mais do que um simples boneco de crochê. É uma peça de arte feita à mão, com horas de dedicação, os melhores materiais e uma grande dose de paixão pelo universo geek. Queremos que você sinta a nostalgia e a alegria de ter seu personagem favorito sempre por perto.</p>
-                <a href="#" class="btn">Saiba Mais Sobre Nós</a>
+                <a href="#" class="btn">Nossa História Encantada</a>
             </div>
         </section>
 
         <section class="testimonials-section container">
-            <h2>O Que Dizem Nossos Aventureiros?</h2>
+            <h2>O Que Nossas Clientes Amadas Dizem?</h2>
             <div class="testimonial-card">
-                <p>"Amei meu Grogu da <strong>Ias Amigurumis</strong>! A qualidade é incrível e chegou super rápido. Já quero o próximo!"</p>
-                <p class="author">- Mariana S., Caçadora de Recompensas Satisfeita</p>
+                <p>"Amei meu Grogu da <strong>Ias Amigurumis</strong>! A qualidade é incrível e o atendimento foi super fofo. Já quero o próximo!"</p>
+                <p class="author">- Mariana S., Colecionadora Feliz</p>
             </div>
             <div class="testimonial-card">
-                <p>"O Pikachu é perfeito, os detalhes são impressionantes. Meu filho não larga mais! Recomendo a <strong>Ias Amigurumis</strong>!"</p>
-                <p class="author">- Carlos P., Mestre Pokémon Orgulhoso</p>
+                <p>"O Pikachu é perfeito, os detalhes são impressionantes. Minha filha amou! Recomendo a <strong>Ias Amigurumis</strong> de olhos fechados!"</p>
+                <p class="author">- Carlos P., Pai de Mestra Pokémon</p>
             </div>
         </section>
 
@@ -368,7 +368,7 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Ias Amigurumis. Todos os direitos reservados.</p>
-            <p>Criado por um Mestre Artesão para Fãs Apaixonados.</p>
+            <p>Criado com Amor e Pontinhos de Magia.</p>
             <div class="social-icons">
                 <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
