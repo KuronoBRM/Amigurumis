@@ -22,12 +22,24 @@
         /* --- Tipografia Geek (Mantida para títulos) e Cores Suaves --- */
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@400;700&display=swap');
 
-        h1, h2, h3 {
+        /* Títulos principais das seções */
+        h2 {
             font-family: 'Press Start 2P', cursive;
-            color: #E57373; /* Rosa mais forte e legível */
+            color: #D81B60; /* Rosa escuro vibrante */
             margin-bottom: 20px;
-            text-shadow: 1px 1px #FFEBEE; /* Sombra rosa bem clara */
+            text-shadow: 1px 1px #FFEBEE;
+            text-align: center; /* Centralizando os títulos das seções */
         }
+        
+        /* Títulos dentro dos cards de produto */
+        .product-card h3 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.3em;
+            color: #E57373; /* Rosa forte */
+            margin-bottom: 10px;
+            text-shadow: 1px 1px #FFEBEE;
+        }
+
 
         /* --- Container Principal --- */
         .container {
@@ -46,10 +58,16 @@
             margin-bottom: 30px;
         }
 
-        header .logo {
-            font-size: 2.2em;
-            letter-spacing: 1px;
-            color: #D81B60; /* Um rosa mais escuro e vibrante para o logo */
+        /* Estilos para o container do logo e a imagem do logo */
+        .logo-container {
+            text-align: center; 
+            margin-bottom: 15px; 
+        }
+
+        .logo-image {
+            max-width: 320px; /* Aumentei um pouco, ajuste conforme o seu logo */
+            height: auto;     
+            display: inline-block; 
         }
 
         nav ul {
@@ -64,7 +82,7 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #7B6D6D; /* Cinza mais escuro para links da navegação */
+            color: #7B6D6D; 
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
             padding: 5px 10px;
@@ -73,26 +91,25 @@
         }
 
         nav ul li a:hover, nav ul li a.active {
-            background-color: #E57373; /* Rosa forte */
-            color: #FFF7F9; /* Texto claro do botão */
+            background-color: #E57373; 
+            color: #FFF7F9; 
         }
 
         /* --- Seção Hero --- */
         .hero {
-            /* Atualize o placeholder para um banner com cores femininas e tema da loja */
             background: url('https://via.placeholder.com/1200x400/FFEBEE/E57373?text=Ias+Amigurumis+Banner+Fofo!') no-repeat center center/cover;
-            color: #4E4E4E; /* Texto escuro para contraste com fundo potencialmente claro do banner */
+            color: #4E4E4E; 
             padding: 60px 20px;
             text-align: center;
             border-radius: 8px;
             margin-bottom: 40px;
-            box-shadow: 0 0 15px rgba(229, 115, 115, 0.2); /* Sombra rosa suave */
+            box-shadow: 0 0 15px rgba(229, 115, 115, 0.2); 
         }
 
-        .hero h2 {
-            font-size: 2.8em;
+        .hero h2 { /* Título principal dentro do Hero */
+            font-size: 2.5em; /* Ajustado para melhor encaixe */
             margin-bottom: 15px;
-            color: #D81B60; /* Rosa escuro vibrante para o título do hero */
+            color: #D81B60; 
             text-shadow: 1px 1px #FFF9F9;
         }
 
@@ -105,8 +122,8 @@
 
         .btn {
             display: inline-block;
-            background-color: #E57373; /* Rosa forte */
-            color: #FFF7F9; /* Texto claro do botão */
+            background-color: #E57373; 
+            color: #FFF7F9; 
             padding: 12px 25px;
             text-decoration: none;
             font-family: 'Press Start 2P', cursive;
@@ -114,11 +131,11 @@
             border-radius: 5px;
             border: 2px solid #E57373;
             transition: background-color 0.3s, color 0.3s, transform 0.2s;
-            box-shadow: 3px 3px #D45050; /* Sombra rosa um pouco mais escura */
+            box-shadow: 3px 3px #D45050; 
         }
 
         .btn:hover {
-            background-color: #D45050; /* Rosa um pouco mais escuro no hover */
+            background-color: #D45050; 
             transform: translateY(-2px);
             box-shadow: 5px 5px #B24040;
         }
@@ -135,8 +152,8 @@
         }
 
         .product-card {
-            background-color: #FFFFFF; /* Cards brancos para leveza */
-            border: 2px solid #FFC1CC; /* Borda rosa clara */
+            background-color: #FFFFFF; 
+            border: 2px solid #FFC1CC; 
             border-radius: 8px;
             padding: 20px;
             text-align: center;
@@ -145,8 +162,8 @@
 
         .product-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(229, 115, 115, 0.15); /* Sombra rosa suave */
-            border-color: #E57373; /* Borda rosa forte no hover */
+            box-shadow: 0 10px 20px rgba(229, 115, 115, 0.15); 
+            border-color: #E57373; 
         }
 
         .product-card img {
@@ -155,19 +172,13 @@
             height: auto;
             border-radius: 6px;
             margin-bottom: 15px;
-            border: 3px solid #E57373; /* Borda rosa forte na imagem */
-        }
-
-        .product-card h3 {
-            font-size: 1.3em;
-            color: #E57373; /* Título do card em rosa forte */
-            margin-bottom: 10px;
+            border: 3px solid #E57373; 
         }
 
         .product-card .price {
             font-size: 1.4em;
             font-weight: bold;
-            color: #D81B60; /* Preço em rosa escuro vibrante */
+            color: #D81B60; 
             margin-bottom: 15px;
             font-family: 'Montserrat', sans-serif;
         }
@@ -178,16 +189,16 @@
             margin-left: 8px;
         }
 
-        .product-card p { /* Descrição do produto no card */
+        .product-card p { 
             font-size: 0.9em;
             margin-bottom: 15px;
             font-family: 'Montserrat', sans-serif;
-            color: #6D6D6D; /* Cinza suave para descrição */
+            color: #6D6D6D; 
         }
 
         /* --- Seção Sobre / Destaque --- */
         .about-section {
-            background-color: #FFEBEE; /* Fundo rosa pastel */
+            background-color: #FFEBEE; 
             padding: 40px 20px;
             margin: 40px 0;
             border-radius: 8px;
@@ -195,9 +206,7 @@
             border-top: 3px solid #FFC1CC;
             border-bottom: 3px solid #FFC1CC;
         }
-        .about-section h2 {
-             color: #D81B60; /* Título da seção em rosa escuro vibrante */
-        }
+        
         .about-section p {
             font-family: 'Montserrat', sans-serif;
             max-width: 700px;
@@ -211,15 +220,15 @@
             text-align: center;
         }
         .testimonial-card {
-            background-color: #FFFFFF; /* Card de depoimento branco */
-            border: 1px solid #FFEBEE; /* Borda rosa bem clarinha */
-            border-left: 5px solid #E57373; /* Destaque lateral rosa forte */
+            background-color: #FFFFFF; 
+            border: 1px solid #FFEBEE; 
+            border-left: 5px solid #E57373; 
             padding: 20px;
             margin: 0 auto 20px auto;
             max-width: 600px;
             border-radius: 0 8px 8px 0;
         }
-        .testimonial-card p { /* Texto do depoimento */
+        .testimonial-card p { 
              font-family: 'Montserrat', sans-serif;
              font-style: italic;
              color: #5D5D5D;
@@ -228,14 +237,14 @@
         .testimonial-card .author {
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
-            color: #E57373; /* Autor em rosa forte */
+            color: #E57373; 
             text-align: right;
         }
 
         /* --- Rodapé --- */
         footer {
-            background-color: #FFEBEE; /* Rodapé rosa pastel */
-            color: #7B6D6D; /* Texto do rodapé em cinza */
+            background-color: #FFEBEE; 
+            color: #7B6D6D; 
             text-align: center;
             padding: 30px 0;
             margin-top: 40px;
@@ -248,7 +257,7 @@
         }
 
         .social-icons a {
-            color: #E57373; /* Ícones sociais em rosa forte */
+            color: #E57373; 
             margin: 0 10px;
             font-size: 1.5em;
             text-decoration: none;
@@ -256,26 +265,26 @@
         }
 
         .social-icons a:hover {
-            color: #D81B60; /* Rosa escuro vibrante no hover */
+            color: #D81B60; 
         }
 
         /* --- Responsividade Básica --- */
         @media (max-width: 768px) {
-            header .logo {
-                font-size: 1.8em;
-            }
             nav ul li {
                 display: block;
                 margin: 10px 0;
             }
-            .hero h2 {
-                font-size: 2em;
+            .hero h2 { /* Título Hero em mobile */
+                font-size: 1.8em;
             }
             .hero p {
                 font-size: 1em;
             }
             .products-grid {
                 grid-template-columns: 1fr;
+            }
+            .logo-image {
+                max-width: 250px; /* Logo um pouco menor em telas pequenas */
             }
         }
 
@@ -286,7 +295,9 @@
 
     <header>
         <div class="container">
-            <h1 class="logo">Ias Amigurumis</h1>
+            <div class="logo-container">
+                <img src="logo-ias-amigurumis.png" alt="Logo Ias Amigurumis" class="logo-image">
+            </div>
             <nav>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
@@ -320,8 +331,7 @@
 
                 <div class="product-card">
                     <img src="https://via.placeholder.com/250/FFEBEE/E57373?text=Pikachu+Amigo" alt="Amigurumi Pikachu">
-                    <h3>Pikachu Choque do Trovão</h3>
-                    <p class="price">R$ 79,90</p>
+                    <h3>Pikachu Eletrizante</h3> <p class="price">R$ 79,90</p>
                     <p>Capture este Pikachu de crochê antes que ele use o Agility e fuja! Ideal para mestres Pokémon.</p>
                     <a href="#" class="btn">Ver Detalhes</a>
                 </div>
